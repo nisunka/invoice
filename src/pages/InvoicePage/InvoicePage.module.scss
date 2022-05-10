@@ -1,0 +1,70 @@
+.invoice-page__container {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* header */
+
+.invoice-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.invoice-page__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+/* buttons */
+
+.invioce-page__btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .12s cubic-bezier(.34, .09, .34, .83);
+}
+
+.invioce-page__btn:focus,
+.invioce-page__btn:hover {
+  background-color: rgba(118, 88, 224, .1);
+  border: 1px solid rgba(118, 88, 224, .5);
+}
+
+@media (max-width: 600px) {
+  .invoice-page__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  .invoice-page__container {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .invioce-page__btn {
+    border: none;
+  }
+
+  .invioce-page__btn svg path {
+    fill: var(--black);
+  }
+}

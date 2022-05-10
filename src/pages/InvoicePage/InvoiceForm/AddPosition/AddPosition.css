@@ -1,0 +1,146 @@
+.position {
+  margin-bottom: 15px;
+}
+
+.position__top {
+  position: relative;
+  padding: 17px 20px;
+  border: 1px solid var(--gray);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.position__counter {
+  position: absolute;
+  bottom: 20%;
+  right: 3%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: .01em;
+  color: var(--dark-gray);
+}
+
+.position__top-input {
+  width: calc(830 / 870 * 100%);
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  outline: none;
+  padding: 17px 20px 27px 20px;
+}
+
+.position__top-input::placeholder {
+  color: var(--dark-gray);
+}
+
+.position__bottom {
+  display: flex;
+  gap: 0;
+}
+
+.position__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: calc(174 / 870 * 100%);
+}
+
+.position__item-value {
+  padding: 17px 20px;
+  border: 1px solid var(--gray);
+  margin-top: -1px;
+  height: 53px;
+  box-sizing: border-box;
+}
+
+.position__item-name {
+  padding: 18px 20px;
+  border: 1px solid var(--gray);
+  margin-top: -1px;
+}
+
+.position__item-name,
+.position__item-value {
+  border-right: none;
+}
+
+.position__item--last {
+  border-right: 1px solid var(--gray);
+}
+
+.position__item--left {
+  border-bottom-left-radius: 6px;
+}
+
+.position__item--right {
+  border-bottom-right-radius: 6px;
+}
+
+/* add position */
+
+.add-position__btn-box {
+  padding: 15px 20px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+}
+
+.add-position__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: var(--purple);
+  transition: all .12s cubic-bezier(.34, .09, .34, .83);
+}
+
+.add-position__btn:focus,
+.add-position__btn:hover,
+.add-position__btn:focus svg path,
+.add-position__btn:hover svg path {
+  color: rgba(118, 88, 224, .8);
+  fill: rgba(118, 88, 224, .8);
+}
+
+.add-position__btn-text {
+  margin-left: 15px;
+}
+
+@media (max-width: 920px) {
+  .position__item-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 599px)  {
+
+  .position__top {
+    border: none;
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  .position__top-input {
+    padding: 0;
+    width: calc( 520 / 559 * 100% );
+  }
+
+  .position__item-name {
+    border: none;
+  }
+
+  .position__item-value {
+    border: none;
+  }
+
+  .add-position__btn-box {
+    border: none;
+    padding: 15px 0;
+  }
+}

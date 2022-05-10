@@ -1,0 +1,73 @@
+:root {
+  /* colors */
+  --black: #333;
+  --ultra-light-gray: #f3f1f1;
+  --gray: #e1e1e1;
+  --dark-gray: #b2b2b2;
+  --ultra-dark-gray: #747474;
+  --purple: #7658e0;
+  --dark-purple: #6c52c6;
+  --white: #fff;
+  --red: #d74b4b;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./assets/fonts/TTNorms-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("./assets/fonts/TTNorms-Medium.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+  color: #333;
+}
+
+.btn-reset {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
